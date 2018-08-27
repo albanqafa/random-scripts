@@ -5,3 +5,6 @@ Contents:
 
 INSTALL-OVMF.sh
 - Installs OVMF images on void linux from kraxel.org's RPM builds
+
+RadIRC.py
+- a VERY simple IRC client
