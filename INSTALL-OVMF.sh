@@ -21,11 +21,9 @@ for i in $packagelist; do
 done
 echo installing/upgrading...
 sudo rm -rf /usr/share/edk2.git
-sudo rm -rf /usr/share/doc/edk2.git-ovmf-x64
-sudo rm -rf /usr/share/doc/edk2.git-ovmf-ia32
+sudo rm -rf /usr/share/doc/edk2.git-ovmf-{,x64,ia32}
 sudo mv -f -v ./usr/share/edk2.git /usr/share/
-sudo mv -f -v ./usr/share/doc/edk2.git-ovmf-x64 /usr/share/doc/
-sudo mv -f -v ./usr/share/doc/edk2.git-ovmf-ia32 /usr/share/doc/
+sudo mv -f -v ./usr/share/doc/edk2.git-ovmf-{,x64,ia32} /usr/share/doc/
 cd ..
 rm -rf edk2
 echo
