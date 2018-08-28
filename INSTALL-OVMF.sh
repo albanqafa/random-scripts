@@ -28,8 +28,6 @@ sudo mv -f -v ./usr/share/doc/edk2.git-ovmf-x64 /usr/share/doc/
 sudo mv -f -v ./usr/share/doc/edk2.git-ovmf-ia32 /usr/share/doc/
 cd ..
 rm -rf edk2
-echo making backup of conf file...
-sudo cp /etc/libvirt/qemu.conf /etc/libvirt/qemu.conf.old
 echo
 echo ------PLEASE MANUALLY REPLACE THE nvram SECTION OF /etc/libvirt/qemu.conf TO THE FOLLOWING------
 line11='nvram = ['
