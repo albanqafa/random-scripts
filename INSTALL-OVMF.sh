@@ -12,7 +12,6 @@ cd edk2
 packagelist=$(wget -qO- https://www.kraxel.org/repos/jenkins/edk2/ | sed -e 's/<[^>]*>//g' | grep noarch.rpm | sed 's/\.rpm.*/.rpm/')
 echo downloading RPM files...
 for i in $packagelist; do
-	echo $i
 	wget --progress=bar:force http://www.kraxel.org/repos/jenkins/edk2/$i
 done
 echo extracting...
