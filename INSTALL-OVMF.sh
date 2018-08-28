@@ -30,17 +30,11 @@ cd ..
 rm -rf edk2
 echo
 echo ------PLEASE MANUALLY REPLACE THE nvram SECTION OF /etc/libvirt/qemu.conf TO THE FOLLOWING------
-line11='nvram = ['
-line12='   "/usr/share/edk2.git/ovmf-x64/OVMF_CODE-pure-efi.fd:/usr/share/edk2.git/ovmf-x64/OVMF_VARS-pure-efi.fd",'
-line13='   "/usr/share/edk2.git/ovmf-ia32/OVMF_CODE-pure-efi.fd:/usr/share/edk2.git/ovmf-ia32/OVMF_VARS-pure-efi.fd",'
-line14='   "/usr/share/edk2.git/aarch64/QEMU_EFI.fd:/usr/share/edk2.git/aarch64/QEMU_VARS.fd",'
-line15='   "/usr/share/edk2.git/arm/QEMU_EFI.fd:/usr/share/edk2.git/arm/QEMU_VARS.fd"'
-line16=']'
-echo $line11
-echo $line12
-echo $line13
-echo $line14
-echo $line15
-echo $line16
+echo 'nvram = [ 
+   "/usr/share/edk2.git/ovmf-x64/OVMF_CODE-pure-efi.fd:/usr/share/edk2.git/ovmf-x64/OVMF_VARS-pure-efi.fd",
+   "/usr/share/edk2.git/ovmf-ia32/OVMF_CODE-pure-efi.fd:/usr/share/edk2.git/ovmf-ia32/OVMF_VARS-pure-efi.fd",
+   "/usr/share/edk2.git/aarch64/QEMU_EFI.fd:/usr/share/edk2.git/aarch64/QEMU_VARS.fd",
+   "/usr/share/edk2.git/arm/QEMU_EFI.fd:/usr/share/edk2.git/arm/QEMU_VARS.fd"
+]'
 echo
 echo all done.
