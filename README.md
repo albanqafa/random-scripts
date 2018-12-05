@@ -10,4 +10,4 @@ INSTALL-OVMF.sh
 - Installs/Updates OVMF images on void linux from kraxel.org's RPM builds
 
 RadIRC.py
-- a VERY simple IRC client
+- am ugly IRC client written in python
