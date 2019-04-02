@@ -11,3 +11,6 @@ INSTALL-OVMF.sh
 
 RadIRC.py
 - a disgusting IRC client with broken threading written in python
+
+ScheduALL5-patch_meltdownspectre.ps1
+- PowerShell script to fix production scheduling program scheduall5 in response to patches that address meltdown/spectre
