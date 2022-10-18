@@ -22,7 +22,7 @@ write-host "Before:"
 get-mailboxfolderpermission $($_.primarysmtpaddress+":\calendar").Trim("`n")
 
 write-host "Changing..."
-set-mailboxfolderpermission -identity $($_.primarysmtpaddress+":\calendar").Trim("`n") -user Default -AccessRights Reviewer
+set-mailboxfolderpermission -identity $($_.primarysmtpaddress+":\calendar").Trim("`n") -user Default -AccessRights LimitedDetails
 echo " "
 write-host "After:"
 get-mailboxfolderpermission $($_.primarysmtpaddress+":\calendar").Trim("`n")
